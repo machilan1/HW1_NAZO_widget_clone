@@ -1,0 +1,18 @@
+<div class="card">
+    <div class="card-container">
+        <a class="card-content"href="">
+            <img class ="product-img" [src] = product.img alt="">
+            <img class="hover-img" [src] =product.imgHover alt="">
+            <div class="info">
+                <a class="title" href="">{{product.title}}</a>
+                <div class="price-area">
+                    <span  class="price" [style.color]="product.discount!==0? '#888888':'1E2C69'" [style.text-decoration]="product.discount!==0? 'line-through':'none'">  $ {{product.price}}</span>
+                    <span  *ngIf="product.discount!==0" class="discount">NT$ {{product.discount}}</span>
+
+
+                </div>
+            </div>
+        </a>
+        <a href="" class="check">查看商品</a>
+    </div>
+</div>
