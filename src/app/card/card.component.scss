@@ -1,0 +1,113 @@
+.card{
+    font-family: 'Noto Sans TC',Arial;
+    font-size: 14px;
+    padding: 0 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 3px #00000034;
+}
+
+.card-content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: opacity .3s;
+}
+.card-content::before{
+    z-index: 1;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f004";
+    font-size: 14px;
+    position: absolute;
+    color: red;
+    top:1rem;
+    left: 1rem;
+    opacity: 0;
+    display: none;
+}
+
+
+
+.card-content:hover::before{
+    opacity: 1;
+    display: block;
+}
+
+.card-content:hover{
+    opacity: .7;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    border-left: 1px rgba(37, 23, 22, 0.125) solid;
+    border-right: 1px rgba(37, 23, 22, 0.125) solid;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+img{
+    width: 100%;
+    transition: .3s;
+}
+.product-img:hover{
+    opacity: 0;
+}
+.hover-img{
+    z-index: -1;
+    position: absolute;
+    top:0;
+}
+
+.title{
+    margin: 1rem 0;
+    text-align: center;
+    padding:0 1rem;
+    min-height: 40px;
+}
+
+.price-area{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-bottom: 1.2rem;
+    height: 2.25rem;
+}
+.price{
+    font-size: 14.4px;
+    color: #1E2C69;
+}
+
+.discount{
+    margin-left: .5rem;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+.check{
+    width: 100%;
+    padding: 8px 6px;
+    text-align: center;
+    color: #ffffff;
+    background-color: black;
+    box-sizing: border-box;
+    transition: opacity .3s;
+}
+
+.check:hover{
+    opacity: .7;
+}
