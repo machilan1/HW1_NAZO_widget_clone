@@ -1,4 +1,4 @@
-import { Component ,Input,OnInit} from '@angular/core';
+import { Component ,Input,  } from '@angular/core';
 
 
 @Component({
@@ -9,11 +9,23 @@ import { Component ,Input,OnInit} from '@angular/core';
 
 export class NavtagSideComponent {
   @Input() tag:any;
+
+
+  
   toggle:boolean=false;
   count:number=0;
-  height:string =`${0}px`
+  height:string =`${0}px`;
+
+
+
+
+
   ngOnInit():void{
     this.count=this.tag.subtags.length;
     this.height=`${this.count*41}px`
+    this.toggle=false;
   }
+
+
+
 }

@@ -19,6 +19,8 @@ h1:hover{
     overflow: hidden;
 }
 
+
+
 .toggle-button{
     font-size: 10px;
     color: black;
@@ -47,16 +49,17 @@ h1:hover{
     font-size: 14px;
 }
 .subtags{
-   
+    transform: translateX(1rem);
     width: 100%;
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    transition: .3s;
+    transition: .5s;
     height: fit-content;
-    margin-left: 1rem;
+
 
 }
+
 
 a{
     text-decoration: none;

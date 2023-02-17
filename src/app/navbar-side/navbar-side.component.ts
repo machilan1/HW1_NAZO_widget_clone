@@ -10,6 +10,8 @@ interface Tags{
   styleUrls: ['./navbar-side.component.scss']
 })
 export class NavbarSideComponent {
+
+
   navTags:Tags[] =[
   {
   title:"NAZO 獨家聯名",

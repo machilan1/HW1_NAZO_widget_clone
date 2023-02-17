@@ -13,25 +13,30 @@ a:hover{
 
 
 .navtag{
+
+    height: 100%;
     position: relative;
     width: fit-content;
 }
 
 
 .navtag-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
     position: relative;
     color: white;
-    padding: 1rem 0;
 }
 .dropper{
-    background-color: white;
+    padding-top: 2rem;
+    background-color: transparent;
     overflow: hidden;
     width: 12rem;
-    margin: 1rem 0;
     position: absolute;
-    padding-left: 1rem;
+    top:calc(70px - 1rem);
     left:-1rem;
-    transition: .3s;
+    transition: opacity .3s, transform .5s;
     opacity: 0;
     pointer-events: none;
     transform:translateY(-1rem);
@@ -41,7 +46,6 @@ a:hover{
     transform: translateY(0);
     opacity: 1;
     pointer-events: auto;
-
 }
 
 .navtag-title::before{
@@ -61,9 +65,12 @@ a:hover{
 }
 
 .subtags{
+    box-sizing: border-box;
+    padding: 0 1rem;
+    width: 100%;
+    background-color: white;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
     transition: height .4s;
 
 }
@@ -73,7 +80,7 @@ a:hover{
     height: 1px;
     width: 0%;
     background-color: black;
-    top:2em;
+    bottom: -.2em;
     transition: .2s;
 
 }
@@ -83,7 +90,9 @@ a:hover{
 }
 
 .subtag{
+    width: 100%;
     margin: 1rem 0;
     color: #7a6967;
+    box-sizing: border-box;
 }
 

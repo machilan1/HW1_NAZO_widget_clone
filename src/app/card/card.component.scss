@@ -1,7 +1,6 @@
 .card{
     font-family: 'Noto Sans TC',Arial;
     font-size: 14px;
-    padding: 0 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,9 +9,10 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    border-radius: 5px;
+    border-radius: 4px;
     overflow: hidden;
-    box-shadow: 0 0 3px #00000034;
+    border: 1px rgba(110, 87, 86, 0.225) solid;
+
 }
 
 .card-content{
@@ -52,8 +52,7 @@
     flex-direction: column;
     box-sizing: border-box;
     width: 100%;
-    border-left: 1px rgba(37, 23, 22, 0.125) solid;
-    border-right: 1px rgba(37, 23, 22, 0.125) solid;
+
 }
 a{
     text-decoration: none;
@@ -76,7 +75,7 @@ img{
     margin: 1rem 0;
     text-align: center;
     padding:0 1rem;
-    min-height: 40px;
+    min-height: 2rem;
 }
 
 .price-area{
