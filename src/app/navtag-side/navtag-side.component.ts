@@ -14,6 +14,6 @@ export class NavtagSideComponent {
   height:string =`${0}px`
   ngOnInit():void{
     this.count=this.tag.subtags.length;
-    this.height=`${this.count*36}px`
+    this.height=`${this.count*41}px`
   }
 }
